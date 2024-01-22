@@ -1,0 +1,501 @@
+/* 로고 서체 */
+@font-face {
+    font-family: 'jalnan'; /* 서체의 이름을 지정합니다. */
+    src: url('/asset/font/Jalnan2TTF.ttf'); /* 서체 파일의 경로를 지정합니다. */
+}
+/* 나머지 서체 */
+@font-face {
+    font-family: 'suit';
+    src: url('/asset/font/SUIT-Variable.ttf');
+}
+
+:root {
+    /* color */
+    --white: #fff;
+    --black: #000;
+    --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
+    --blue-800: ##4B778D; /* 메인컬러1 : 네이비 */
+    --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
+    --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
+    --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
+    --yellow-green: #D2E69C; /* 메인컬러4 가장 밝은 연두색 */
+    
+    /* border-radius */
+    --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
+    --radius-50: 50px; /* 완전히 둥글게 */	
+
+    /* margin */	
+    --margin-16: 16px; /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
+    --margin-107: 107px; /* 섹션과 섹션사이에 넣어주세요 */
+
+    /* box-shadow */
+    --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    font-family: suit;
+    min-width: 200px;
+}
+
+.search-back {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.search-back img {
+    height: 600px;
+    filter: blur(5px);
+}
+
+.news-title {
+    background-color: var(--light-green);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.scrollContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transform: translateX(100%);
+}
+
+.scrollContent>div {
+    display: flex;
+    animation: textScrollEffect 12s infinite linear;
+}
+
+
+.input-container {
+    width: 80%;
+    height: 40px;
+    position:relative;
+    top: 150px;
+    margin: 0 auto;
+    z-index: 70;
+}
+
+.input-container>i {
+    position: absolute;
+    left: 20px;
+    line-height: 40px;
+}
+
+.input-container>a{
+    position: absolute;
+    background-color: var(--mint-900);
+    color: #fff;
+    letter-spacing: 8px;
+    right: 0;
+    font-weight: 800;
+    font-size: 1.3rem;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    /* border: 1px solid black; */
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.input-container>input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 100px;
+    outline: none;
+    border: 4px solid transparent;
+    transition: 0.3s linear;
+}
+
+.input-container>input:focus {
+    border-color: #28b5b5;
+}
+
+/*베너*/
+.news {
+    height: 50px;
+}
+
+.news-title {
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.news-container {
+    box-shadow : 0 2px 5px var(--blue-900);
+    border-radius: var(--radius-10);
+    overflow: hidden;
+    display: flex;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+@keyframes textScrollEffect {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-250%);
+    }
+}
+
+.text-container {
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.hash-item {
+    padding: 5px 15px;
+    background-color: var(--light-green);
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 700;
+    margin: 10px 5px 10px 0;
+}
+
+@keyframes anime_textup {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: -0.2rem;
+    }
+    40% {
+        top: 0;
+    }
+    60% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.hash-tag span {
+    position: relative;
+    animation: anime_textup 1.5s infinite;
+}
+
+.hash-tag span:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.hash-tag span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.hash-tag span:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+.hash-tag span:nth-of-type(4) {
+    animation-delay: 0.4s;
+}
+
+.hash-tag span:nth-of-type(5) {
+    animation-delay: 0.5s;
+}
+
+.text-title {
+    font-size: 3rem;
+    color: var(--blue-900)
+}
+
+.banner-container img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-holder{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*근처, 지역 맛집 */
+.local-card-group .card {
+    width: 215px;
+    border-radius: var(--radius-10);
+}
+
+.location-btn{
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(
+        #8FD9A8,
+        #28b5b5
+    );
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 50px;
+    color: #ffffff;
+    z-index: 999;
+    border: none;
+}
+.location-btn:before,
+.location-btn:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #28b5b5;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.location-btn:before{
+    animation: pulse 2s ease-out infinite;
+}
+.location-btn:after{
+    animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse{
+    100%{
+        transform: scale(2.0);
+        opacity: 0;
+    }
+}
+
+
+.local-food-wrap {
+    margin-top: var(--margin-107);
+}
+
+.local-card-group {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px;
+}
+
+.local-food-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.local-food-card:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 10px black;
+    transform: translateY(-10px);
+}
+
+.local-food-title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.all {
+    letter-spacing: 5px;
+    color:var(--blue-700)
+}
+
+.all:hover {
+    color: var(--mint-900);
+}
+
+
+
+.card {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.local-food a {
+    text-decoration: none;
+    color: var(--blue-900);
+}
+
+.city-title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.city-card-group .city-card {
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 200px;
+    height: 400px;
+}
+
+.city-card-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.city {
+    margin-top: var(--margin-107);
+}
+
+
+.city-card {
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.city-card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.city-hover {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.city-hover-title h2{
+    color: var(--white);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--mint-900);
+}
+
+.city-hover-title p {
+    margin-top: 30px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.city-btn {
+    border: 3px solid var(--white);
+    background-color: var(--blue-700);
+    padding: 2px 10px;
+    border-radius: var(--radius-10);
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.city-btn:hover {
+    background-color: var(--white);
+    border-color: var(--mint-900);
+    color: var(--mint-900);
+}
+
+.over {
+    position: relative;
+}
+
+.over-text {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.recommend{
+    margin-top: var(--margin-107);
+}
+
+.re-card {
+    border: none;
+}
+
+.re-card img {
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
+.re-card h5 {
+    font-size: 3rem;
+    color: var(--mint-900);
+    font-family: "Jalnan";
+}
+
+.re-card i {
+    color: red;
+    font-size: 5rem;
+    margin-right: 15px;
+}
+
+.re-card p {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.cafe {
+    font-style: oblique;
+    font-size: 1.8rem;
+    color: rgb(103, 53, 53);
+}
+
+.top3 {
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+.search-container{
+    position: relative
+}
+
+@media screen and (max-width: 48rem) {
+    .header-area, h1{
+        margin: 0 !important;
+    }
+    .nav-bar {
+        /* width: 100vw; */
+        position: fixed !important;
+    }
+
+    .re-card h5 {
+        font-size: 2rem;
+        color: var(--mint-900);
+        font-family: "Jalnan";
+    }
+
+    .re-card i {
+        color: red;
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+
+    .re-card p {
+        font-size: 1rem;
+        color: var(--white);
+        font-weight: bold;
+    }
+}
+

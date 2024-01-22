@@ -1,0 +1,916 @@
+:root {
+    /* color */
+    --white: #fff;
+    --black: #000;
+    --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
+    --blue-800: #4B778D; /* 메인컬러1 : 네이비 */
+    --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
+    --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
+    --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
+    --yellow-green: #D2E69C; /* 메인컬러4 가장 밝은 연두색 */
+    
+    /* border-radius */
+    --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
+    --radius-50: 50px; /* 완전히 둥글게 */	
+
+/* margin */	
+    --margin-16: 16px; /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
+    --margin-107: 107px; /* 섹션과 섹션사이에 넣어주세요 */
+
+/* box-shadow */
+    --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
+}
+
+/* 로고 서체 */
+@font-face {
+    font-family: 'jalnan'; /* 서체의 이름을 지정합니다. */
+    src: url("../asset/font/Jalnan2TTF.ttf"); /* 서체 파일의 경로를 지정합니다. */
+}
+/* 나머지 서체 */
+@font-face {
+    font-family: 'suit';
+    src: url("../asset/font/SUIT-Variable.ttf");
+}
+
+body{
+    font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li{
+  padding-left: 0 !important;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+a {
+    color: var(--blue-900);
+    text-decoration: none !important;
+  }
+
+.title { /* 섹션 제목 */
+    margin-top: var(--margin-107);
+    margin-bottom: 16px;
+    color: var(--blue-900);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+.card-wrapper::-webkit-scrollbar{
+    background-color: rgba(255, 192, 203, 0);
+}
+
+.card-wrapper::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 192, 203, 0);
+}
+
+
+.card-item{ 
+    margin-right: 10px;
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
+.card-item h3,p {
+    margin: 0;
+}
+
+
+/* main-banner */
+.main-banner-box{
+    height: 700px;
+}
+
+
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    max-width: 1086px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+}
+
+.section-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+
+/* region section */
+.region-card-container{
+    margin-bottom: var(--margin-107);
+}
+
+.region-section .card-item{ 
+    width: 252.2px;
+    height: 340px;
+    position: relative;
+    padding: 30px 30px 20px 25px;
+    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    box-shadow: 10px 10px 200px 10px #292e30bd inset;
+    transition: transform 0.3s ease-in-out;
+}
+
+.region-section .card-item:hover{
+    transform: scale(1.02);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.region-section .card-item:nth-child(2){
+    background-image: url(/asset/image/main/region2.png);
+}
+.region-section .card-item:nth-child(3){
+    background-image: url(/asset/image/main/region3.png);
+}
+.region-section .card-item:nth-child(4){
+    background-image: url(/asset/image/main/region4.png);
+}
+.region-section .card-item:nth-child(5){
+    background-image: url(/asset/image/main/region5.png);
+}
+.region-section .card-item:nth-child(6){
+    background-image: url(/asset/image/main/region6.png);
+}
+
+.region-section .card-content{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.region-section h3{
+    margin-bottom: 10px;
+    font-size: 33px;
+}
+
+.region-section .region-list{
+    margin-left: 8px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.region-section .look-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.region-section .look-btn button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--radius-10);
+    background-color: var(--white);
+}
+
+
+/* event-banner */
+.event-slider{
+    border-radius: var(--radius-10);
+}
+
+
+/* sleep section */
+.sleep-card-container{
+    position: relative;
+    padding-bottom: 50px;
+}
+.sleep-section .card-item{
+    position: relative;
+    width: 337px;
+    height: 378px;
+    margin-right: 30px;
+    padding: 30px 30px 20px 25px;
+    border-radius: var(--radius-10);
+    background-image: url(/asset/image/main/sleep1.jpeg);
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: 10px 10px 200px 10px #292e30bd inset; */
+    overflow: visible;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sleep-section .card-item:hover{
+    transform: scale(1.02);
+    color: var(--blue-900);
+}
+
+.sleep-section .card-item:nth-child(2){
+    background-image: url(/asset/image/main/sleep2.jpeg);
+}
+.sleep-section .card-item:nth-child(3){
+    background-image: url(/asset/image/main/sleep3.jpeg);
+}
+.sleep-section .card-item:nth-child(4){
+    background-image: url(/asset/image/main/sleep4.jpeg);
+}
+.sleep-section .card-item:nth-child(5){
+    background-image: url(/asset/image/main/sleep5.jpeg);
+}
+
+.sleep-section .card-cap{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    bottom: -20px;
+    right: -5px;
+    width: 303px;
+    height: 180px;
+    padding: 25px 25px 15px 25px;
+    background-color: var(--white);
+    border-radius: var(--radius-10);
+    box-shadow: var(--shadow);
+}
+
+.sleep-section h3{
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sleep-section p{
+    margin: 0;
+}
+
+.sleep-section .tags{
+    display: flex;
+}
+
+.sleep-section .tags .tag{
+    margin-right: 4px;
+    padding: 0;
+    font-size: 14px;
+    color: var(--mint-900);
+    background-color: rgba(255, 192, 203, 0);
+}
+
+.sleep-section .price{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
+
+
+/* hot-deal section */
+.hot-deal-box{
+    width: 100%;
+    display: flex;
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
+.hot-deal-cap{
+    width: 100%;
+    padding: 40px;
+    background-color: var(--mint-900);
+    box-shadow: -4px 0 20px rgba(34, 34, 34, 0.589);
+}
+
+.time-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--white);
+    border-radius: var(--radius-50);
+}
+
+.time-area p{
+    margin-left: 7px;
+    margin-bottom: 0;
+}
+
+.cap-area{
+    height: 83%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 25px 0  0 25px;
+    color: var(--white);
+}
+
+.hot-deal-cap .sub-cap{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--blue-900);
+}
+
+.hot-deal-cap .price-cap{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 180px;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.cap-area .check-btn{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.check-btn img{
+    margin-left: 10px;
+}
+
+
+
+/* food section */
+.food-section .card-item{
+    width: 270px;
+    height: 360px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    margin-right: 17px;
+    margin-bottom: 10px;
+    border: 0.5px solid rgb(199, 197, 197);
+    background-image: url(/asset/image/main/food1.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.food-section .card-item:hover{
+    color: var(--blue-900);
+    box-shadow: var(--shadow);
+}
+
+.food-section .card-item:nth-child(2){
+    background-image: url(/asset/image/main/food2.png);
+}
+.food-section .card-item:nth-child(3){
+    background-image: url(/asset/image/main/food3.png);
+}
+.food-section .card-item:nth-child(4){
+    background-image: url(/asset/image/main/food4.png);
+}
+.food-section .card-item:nth-child(5){
+    background-image: url(/asset/image/main/food5.png);
+}
+.food-section .card-item:nth-child(6){
+    background-image: url(/asset/image/main/food6.png);
+}
+
+.food-section .card-cap{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--white);
+}
+
+.food-section h3{
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.food-section p{
+    font-size: 14px;
+    color: var(--blue-700);
+}
+
+.food-section .card-cap .bottom-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-icon{
+    width: 20px;
+}
+
+.food-section .tags{
+    display: flex;
+}
+
+.food-section .tags .tag{
+    font-size: 12px;
+    color: var(--white);
+    background-color: #98251E;
+}
+
+
+/* tour section */
+.tour-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-items p{
+    margin: 0;
+}
+
+.tour-items a{
+    color: var(--white);
+}
+.tour-items a:hover{
+    color: var(--white);
+}
+
+.item-group{
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.tour-item{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    padding: 20px 26px;
+    border-radius: var(--radius-10);
+    background-color: gray;
+    background-image: url(/asset/image/main/tour1.jpeg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px -70px 50px 0 #00000093 inset;
+    overflow: hidden;
+}
+
+.tour-items>.tour-item:first-child{
+    width: 361px;
+    height: 464px;
+    margin-right: 16px;
+    background-image: url(/asset/image/main/tour1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tour-item2 {
+    background-image: url(/asset/image/main/tour22.jpeg);
+}
+
+.tour-item3{
+    background-image: url(/asset/image/main/tour3.png);
+}
+
+.tour-item4{
+    background-image: url(/asset/image/main/tour4.png);
+}
+
+.tour-item5{
+    background-image: url(/asset/image/main/tour5.png);
+}
+
+/* .item-group-first .tour-item:nth-child(1){
+    background-image: url(/asset/image/main/tour2.jpeg);
+    background-size: cover;
+} */
+
+.item-group .tour-item:first-child{
+    margin-bottom: 16px;
+}
+
+.item-group-first{
+    margin-right: 16px;
+}
+
+.item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 34px 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: #28b5b5c7;;
+}
+
+.tour-item:hover .item-hover{
+    display: flex;
+}
+
+.item-hover{
+    display: none;
+}
+
+.tour-item:hover .tour-title{
+    opacity: 0;
+}
+
+.item-hover h3{
+    font-size: 20px;
+}
+
+.item-hover p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.item-hover .bottom-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item-hover .tags{
+    display: flex;
+}
+
+.item-hover-first{
+    justify-content: space-around;
+}
+
+.tags .tag{
+    margin-right: 5px;
+    padding: 4px 8px;
+    border-radius: var(--radius-50);
+    font-size: 13px;
+    color: var(--blue-800);
+    background-color: var(--light-green);
+}
+
+.item-hover .price{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* flight section */
+.flight-items{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+.flight-item{
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.flight-img{
+    width: 538px;
+    border-radius: 20px;
+}
+
+.main-slide-mobile,.region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
+.tour-section-mobile, .flight-section-mobile{
+    display: none;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 48rem) {
+    .main-slide-pc,.region-section-pc, .sleep-section-pc, .food-section-pc, 
+    .tour-section-pc, .flight-section-pc {
+        display: none;
+    }
+    .main-slide-mobile,.region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
+    .tour-section-mobile, .flight-section-mobile{
+        display: flex;
+    } 
+
+    .header-area, h1{
+        margin: 0 !important;
+    }
+
+    .nav-bar {
+        /* width: 100vw; */
+        position: fixed !important;
+    }
+
+    .title{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    /* main-banner */
+    .main-banner-box{
+        height: 100%;
+    }
+
+    /* main */
+    .main-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .card-wrapper{
+        width: 100%;
+    }
+
+    /* region-section */
+    .region-card-container{
+        flex-flow: column;
+        padding-left: 10px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .card-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .card-group:nth-child(2){
+        margin-bottom: 0;
+    }
+
+    .region-section .card-item {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-image: none;
+        background-color: rgb(255, 255, 255);
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .region-section .card-item:nth-child(2),
+    .region-section .card-item:nth-child(3){
+        background-image: none;
+    }
+
+
+    .region-section .card-img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 6px;
+        border-radius: var(--radius-50);
+        overflow: hidden;
+    }
+
+    .region-section .card-img img{
+        width: 100%;
+    }
+
+    .region-section h3{
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--blue-900);
+        margin: 0;
+    }
+
+    /* sleep section */
+    .sleep-card-container, .tour-card-container{
+        display: flex;
+    }
+
+    .sleep-items, .tour-items{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 0;
+        overflow-x: auto;
+    }
+
+    .tour-img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .sleep-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .sleep-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .sleep-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+    
+    .sleep-img{
+        width: 145px;
+        height: 138px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+    }
+
+    .sleep-section .cap{
+        padding: 10px 7px 6px 7px;
+        font-size: 11px;
+        color: var(--blue-900);
+    }
+
+    .sleep-section h3{
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+
+    .sleep-section p{
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 600;
+    }
+
+    /* hot-deal section */
+    .hot-deal-box{
+        flex-flow: column;
+    }
+
+    .hot-deal-cap{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .time-area{
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .cap-area{
+       padding: 10px 0 0 37px;
+    }
+
+    .hot-deal-section .sub-cap{
+        font-size: 16px;
+    }
+
+    .hot-deal-section .price-cap{
+        margin-top: 35px;
+        font-size: 25px;
+    }
+
+    .cap-area .check-btn{
+        font-size: 13px;
+    }
+
+    .check-btn img{
+        width: 30px;
+    }
+
+    /* food section  */
+
+    .food-card-container{
+        display: flex;
+    }
+
+    .food-items{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .food-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .food-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .food-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+    
+    .food-img{
+        width: 190px;
+        height: 138px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+    }
+
+    .food-section .cap{
+        padding: 10px 7px 6px 7px;
+        font-size: 11px;
+        color: var(--blue-900);
+    }
+
+    .food-section h3{
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .food-section p{
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .michelin-icons{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .star-icon{
+        width: 16px;
+        margin-right: 4px;
+    }
+
+    /* tour section */
+    .tour-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+
+    .tour-img{
+        width: 324px;
+        height: 181px;
+    }
+
+    .tour-cap{
+        padding: 15px;
+        color: var(--blue-900);
+    }
+
+    .tour-cap p{
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .tour-cap h3{
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .second-group{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .second-group .tags{
+        display: flex;
+    }
+
+    /* flight section */
+    .flight-items{
+        width: 100%;
+    }
+
+    .flight-img{
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    .flight-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .flight-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    
+}

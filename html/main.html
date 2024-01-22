@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>누나투어</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+   <script src="/javascript/jquery-3.7.1.js"></script> 
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- main banner start -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide main-slide-pc"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="main-banner-box carousel-inner">
+        <div class="carousel-item active">
+          <a href="#">
+            <img
+              src="/asset/image/main/main2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">
+            <img
+              src="/asset/image/main/main3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">
+            <img
+              src="/asset/image/main/main4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </a>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- main banner mobile -->
+    <div
+    id="carouselExampleIndicators"
+    class="carousel slide main-slide-mobile"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="main-banner-box carousel-inner">
+      <div class="carousel-item active">
+        <a href="#">
+          <img
+            src="/asset/image/main/main-m1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">
+          <img
+            src="/asset/image/main/main-m3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">
+          <img
+            src="/asset/image/main/main-m4.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </a>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    <!-- main banner end-->
+
+    <main>
+      <!-- main start -->
+      <div class="main-container">
+        <!-- region section start-->
+        <section class="region-section region-section-pc">
+          <div class="region-container section-container">
+            <h2 class="title region-title">어디로 떠날까요?✈️</h2>
+            <div class="region-card-container card-wrapper">
+              <a href="#" class="card-item col-lg-3">
+                <div class="card-content">
+                  <div class="card-cap">
+                    <h3>제주</h3>
+                    <ul class="region-list">
+                      <li class="region">애월</li>
+                      <li class="region">서귀포</li>
+                      <li class="region">우도</li>
+                    </ul>
+                  </div>
+                  <div class="look-btn">
+                    <button>둘러보기</button>
+                    <img src="/asset/image/main/arrow2.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card-item col-lg-3">
+                <div class="shadow"></div>
+                <div class="card-content">
+                  <div class="card-cap">
+                    <h3>강원</h3>
+                    <ul class="region-list">
+                      <li class="region">속초</li>
+                      <li class="region">강릉</li>
+                      <li class="region">양양</li>
+                    </ul>
+                  </div>
+                  <div class="look-btn">
+                    <button>둘러보기</button>
+                    <img src="/asset/image/main/arrow2.svg" alt="">
+                  </div>
+                </div>
+                
+              </a>
+              <a href="#" class="card-item col-lg-3">
+                <div class="card-content">
+                  <div class="card-cap">
+                    <h3>전남</h3>
+                    <ul class="region-list">
+                      <li class="region">여수</li>
+                      <li class="region">목포</li>
+                      <li class="region">담양</li>
+                    </ul>
+                  </div>
+                  <div class="look-btn">
+                    <button>둘러보기</button>
+                    <img src="/asset/image/main/arrow2.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card-item col-lg-3">
+                <div class="card-content">
+                  <div class="card-cap">
+                    <h3>부산</h3>
+                    <ul class="region-list">
+                      <li class="region">해운대</li>
+                      <li class="region">광안리</li>
+                      <li class="region">다대포</li>
+                    </ul>
+                  </div>
+                  <div class="look-btn">
+                    <button>둘러보기</button>
+                    <img src="/asset/image/main/arrow2.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card-item col-lg-3">
+                <div class="card-content">
+                  <div class="card-cap">
+                    <h3>서울</h3>
+                    <ul class="region-list">
+                      <li class="region">북촌</li>
+                      <li class="region">성수</li>
+                      <li class="region">홍대</li>
+                    </ul>
+                  </div>
+                  <div class="look-btn">
+                    <button>둘러보기</button>
+                    <img src="/asset/image/main/arrow2.svg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card-item col-lg-3">
+                <div class="card-content">
+                  <div class="card-cap">
+                    <h3>경북</h3>
+                    <ul class="region-list">
+                      <li class="region">안동</li>
+                      <li class="region">예천</li>
+                      <li class="region">문경</li>
+                    </ul>
+                  </div>
+                  <div class="look-btn">
+                    <button>둘러보기</button>
+                    <img src="/asset/image/main/arrow2.svg" alt="">
+                  </div>
+                </div>
+              </a>
+          </div>
+        </section>
+        <!-- region section mobile -->
+        <section class="region-section region-section-mobile">
+          <div class="region-container section-container">
+            <h2 class="title region-title">어디로 떠날까요?✈️</h2>
+            <div class="region-card-container card-wrapper">
+              <div class="card-group">
+                <a href="#" class="card-item col-lg-3">
+                  <div class="card-img">
+                    <img src="/asset/image/main/4737_large_square_1535949304.jpg" alt="">
+                  </div>
+                  <h3>제주</h3>
+                </a>
+                <a class="card-item col-lg-3">
+                  <div class="shadow"></div>
+                  <div class="card-img">
+                    <img src="/asset/image/main/region2.png" alt="">
+                  </div>
+                  <h3>강원</h3>
+                </a>
+                <a class="card-item col-lg-3">
+                  <div class="card-img">
+                    <img src="/asset/image/main/region3.png" alt="">
+                  </div>
+                  <h3>전남</h3>
+                </a>
+              </div>
+              <div class="card-group">
+                <a class="card-item col-lg-3">
+                  <div class="card-img">
+                    <img src="/asset/image/main/region4.png" alt="">
+                  </div>
+                    <h3>부산</h3>
+                </a>
+                <a class="card-item col-lg-3">
+                    <div class="card-img">
+                      <img src="/asset/image/main/region5.png" alt="">
+                    </div>
+                    <h3>서울</h3>
+                </a>
+                <a class="card-item col-lg-3">
+                  <div class="card-img">
+                    <img src="/asset/image/main/region6.png" alt="">
+                  </div>
+                  <h3>경북</h3>
+              </a>
+              </div>
+          </div>
+        </section>
+        <!-- region section end -->
+
+        <!-- event banner start -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div> -->
+          <div class="event-slider  carousel-inner">
+            <div class="carousel-item active">
+              <a href="#"><img src="/asset/image/air/banner3.png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"><img src="/asset/image/air/banner1.png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"><img src="/asset/image/air/banner2.png" class="d-block w-100" alt="..."></a>
+            </div>
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+        <!-- event banner end-->
+
+        <!-- sleep section start-->
+        <section class="sleep-section sleep-section-pc">
+          <div class="sleep-container section-container">
+              <h2 class="title sleep-title">이왕 살거라면🏡</h2>
+              <div class="sleep-card-container card-wrapper">
+                <a href="/html/sleep.html" class="card-item col-lg-3">
+                  <div class="card-cap">
+                    <div class="cap">
+                      <h3>[제주]</h3>
+                      <p>빛과 그림자가 머무는 아름다운 집</p>
+                      <div class="tags">
+                        <div class="tag sleep-tag" id="sleep-tag">#오션뷰</div>
+                        <div class="tag sleep-tag">#돌담</div>
+                        <div class="tag sleep-tag">#마당</div>
+                      </div>
+                    </div>
+                    <p class="price">14박 717,000원~</p>
+                  </div>
+                </a>
+                <a href="/html/sleep.html" class="card-item col-lg-3">
+                  <div class="card-cap">
+                    <div class="cap">
+                      <h3>[부산]</h3>
+                      <p>테라스 리버뷰가 아름다운 노을 맛집</p>
+                      <div class="tags">
+                        <div class="tag sleep-tag" id="sleep-tag">#리버뷰</div>
+                        <div class="tag sleep-tag">#테라스</div>
+                        <div class="tag sleep-tag">#빔프로젝트</div>
+                      </div>
+                    </div>
+                    <p class="price">14박 929,000원~</p>
+                  </div>
+                </a>
+                <a href="/html/sleep.html" class="card-item col-lg-3">
+                  <div class="card-cap">
+                    <div class="cap">
+                      <h3>[강원]</h3>
+                      <p>속초 속 작은 발리, 영랑호 근처 아늑한 원룸</p>
+                      <div class="tags">
+                        <div class="tag sleep-tag" id="sleep-tag">#호수뷰</div>
+                        <div class="tag sleep-tag">#홈캠핑</div>
+                        <div class="tag sleep-tag">#베란다</div>
+                      </div>
+                    </div>
+                    <p class="price">14박 574,000원~</p>
+                  </div>
+                </a>
+                <a href="/html/sleep.html" class="card-item col-lg-3">
+                  <div class="card-cap">
+                    <div class="cap">
+                      <h3>[여수]</h3>
+                      <p>여수 밤바다, 야경의 중심에 있는 단독 주택</p>
+                      <div class="tags">
+                        <div class="tag sleep-tag" id="sleep-tag">#오션뷰</div>
+                        <div class="tag sleep-tag">#야경</div>
+                        <div class="tag sleep-tag">#주택</div>
+                      </div>
+                    </div>
+                    <p class="price">14박 662,000원~</p>
+                  </div>
+                </a>
+                <a href="/html/sleep.html" class="card-item col-lg-3">
+                  <div class="card-cap">
+                    <div class="cap">
+                      <h3>[강원]</h3>
+                      <p>할머니 시골 집이 그리울 때</p>
+                      <div class="tags">
+                        <div class="tag sleep-tag" id="sleep-tag">#시골</div>
+                        <div class="tag sleep-tag">#반려동물 동반</div>
+                        <div class="tag sleep-tag">#마당</div>
+                      </div>
+                    </div>
+                    <p class="price">14박 651,000원~</p>
+                  </div>
+                </a>
+             
+            </div>
+          </div>
+        </section>
+
+        <!-- sleep section mobile -->
+        <section class="sleep-section sleep-section-mobile">
+          <div class="sleep-container section-container">
+              <h2 class="title sleep-title">이왕 살거라면🏡</h2>
+              <div class="sleep-items">
+                <a href="/html/sleep.html" class="sleep-item">
+                  <img src="/asset/image/main/sleep1.jpeg" class="sleep-img" alt="...">
+                <div class="cap">
+                  <h3>[제주] 빛과 그림자가 머무는 아름다운 집</h3>
+                  <p>14박 717,000원~</p>
+                </div>
+                </a>
+                <a href="/html/sleep.html" class="sleep-item">
+                  <img src="/asset/image/main/sleep2.jpeg" class="sleep-img" alt="...">
+                <div class="cap">
+                  <h3>[부산] 테라스 리버뷰가 아름다운 노을 맛집</h3>
+                  <p>14박 929,000원~</p>
+                </div>
+                </a>
+                <a href="/html/sleep.html" class="sleep-item">
+                  <img src="/asset/image/main/sleep3.jpeg" class="sleep-img" alt="...">
+                <div class="cap">
+                  <h3>[강원] 속초 속 작은 발리, 영랑호 근처 아늑한 원룸</h3>
+                  <p>14박 574,000원~</p>
+                </div>
+                </a>
+                <a href="/html/sleep.html" class="sleep-item">
+                  <img src="/asset/image/main/sleep4.jpeg" class="sleep-img" alt="...">
+                <div class="cap">
+                  <h3>[여수] 여수 밤바다, 야경의 중심에 있는 단독 주택</h3>
+                  <p>14박 662,000원~</p>
+                </div>
+                </a>
+                <a href="/html/sleep.html" class="sleep-item">
+                  <img src="/asset/image/main/sleep5.jpeg" class="sleep-img" alt="...">
+                <div class="cap">
+                  <h3>[강원] 할머니 시골 집이 그리울 때</h3>
+                  <p>14박 651,000원~</p>
+                </div>
+                </a>
+            </div>
+          </div>
+        </section>
+        
+        <!-- sleep section end --> 
+       
+        <!-- hot-deal section start -->
+        <section class="hot-deal-section">
+          <div class="hot-deal-container section-container">
+            <h2 class="title hot-deal-title">🔥호캉스 맛집 핫딜🔥</h2>
+            <div class="hot-deal-box">
+              <img src="/asset/image/main/hotel.jpg" alt="" class="hot-deal-img">
+              <div class="hot-deal-cap">
+                <div class="time-area">
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="dDay">000일 00시간 00분 00초</p>
+                </div>
+                <div class="cap-area">
+                  <p class="sub-cap">서울,부산,제주 핫한 호텔 총 출동!</p>
+                  <h3 class="price-cap">특가 499,000원 부터</h3>
+                  <a href="/html/sleep.html" class="check-btn">
+                    <span>지금 확인하러 가기</span>
+                    <img src="/asset/image/main/arrow2.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- hot-deal section end -->
+        
+        <!-- food section start -->
+        <section class="food-section food-section-pc">
+          <div class="food-container section-container">
+            <h2 class="title food-title">전국 미슐랭 탐방🍽</h2>
+            <div class="food-card-container card-wrapper">
+              <a href="/html/food.html" class="card-item col-lg-3">
+                <div class="card-cap">
+                  <div class="top-group">
+                    <h3>[서울] 가온</h3>
+                    <p>한국 유일의 미슐랭 3스타 한식 레스토랑</p>
+                  </div>
+                  <div class="bottom-group">
+                    <div class="tags">
+                      <div class="tag sleep-tag" id="sleep-tag">#서울</div>
+                      <div class="tag sleep-tag">#한식</div>
+                    </div>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="/html/food.html" class="card-item col-lg-3">
+                <div class="card-cap">
+                  <div class="top-group">
+                    <h3>[서울] 알라 프리마</h3>
+                    <p>과감하고 창의적인 미식가들의 아지트</p>
+                  </div>
+                  <div class="bottom-group">
+                    <div class="tags">
+                      <div class="tag sleep-tag" id="sleep-tag">#이노베이티브</div>
+                      <div class="tag sleep-tag">#독특한</div>
+                    </div>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="/html/food.html" class="card-item col-lg-3">
+                <div class="card-cap">
+                  <div class="top-group">
+                    <h3>[서울] 정식당</h3>
+                    <p>모던 한식 파인 다이닝의 개척자</p>
+                  </div>
+                  <div class="bottom-group">
+                    <div class="tags">
+                      <div class="tag sleep-tag" id="sleep-tag">#한식</div>
+                      <div class="tag sleep-tag">#독특한</div>
+                    </div>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="card-item col-lg-3">
+                <div class="card-cap">
+                  <div class="top-group">
+                    <h3>[서울] 밍글스</h3>
+                    <p>정갈한 맛과 따뜻한 여백의 미</p>
+                  </div>
+                  <div class="bottom-group">
+                    <div class="tags">
+                      <div class="tag sleep-tag" id="sleep-tag">#한식</div>
+                      <div class="tag sleep-tag">#전통</div>
+                    </div>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="/html/food.html" class="card-item col-lg-3">
+                <div class="card-cap">
+                  <div class="top-group">
+                    <h3>[서울] 코지마</h3>
+                    <p>최상급 자연산 재료의 향연</p>
+                  </div>
+                  <div class="bottom-group">
+                    <div class="tags">
+                      <div class="tag sleep-tag" id="sleep-tag">#초밥</div>
+                      <div class="tag sleep-tag">#오마카세</div>
+                    </div>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </div>
+              </a>
+ 
+              <a href="/html/food.html" class="card-item col-lg-3">
+                <div class="card-cap">
+                  <div class="top-group">
+                    <h3>[제주] TERRENO</h3>
+                    <p>제주에서 느끼는 스페인의 맛</p>
+                  </div>
+                  <div class="bottom-group">
+                    <div class="tags">
+                      <div class="tag sleep-tag" id="sleep-tag">#제주</div>
+                      <div class="tag sleep-tag">#스페인</div>
+                    </div>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </section>
+
+         <!-- food section mobile -->
+         <section class="food-section food-section-mobile">
+          <div class="food-container section-container">
+              <h2 class="title food-title">전국 미슐랭 탐방🍽</h2>
+              <div class="food-items">
+                <a href="/html/food.html" class="food-item">
+                  <img src="/asset/image/main/food1.png" class="food-img" alt="...">
+                  <div class="cap">
+                    <h3>[서울] 가온</h3>
+                    <p>한국 유일의 미슐랭 3스타 한식 레스토랑</p>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </a>
+                <a href="/html/food.html" class="food-item">
+                  <img src="/asset/image/main/food2.png" class="food-img" alt="...">
+                  <div class="cap">
+                    <h3>[서울] 알라 프리마</h3>
+                    <p>과감하고 창의적인 미식가들의 아지트</p>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </a>
+                <a href="/html/food.html" class="food-item">
+                  <img src="/asset/image/main/food3.png" class="food-img" alt="...">
+                  <div class="cap">
+                    <h3>[서울] 정식당</h3>
+                    <p>모던 한식 파인 다이닝의 개척자</p>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </a>
+                <a href="/html/food.html" class="food-item">
+                  <img src="/asset/image/main/food4.png" class="food-img" alt="...">
+                  <div class="cap">
+                    <h3>[서울] 밍글스</h3>
+                    <p>정갈한 맛과 따뜻한 여백의 미</p>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </a>
+                <a href="/html/food.html" class="food-item">
+                  <img src="/asset/image/main/food5.png" class="food-img" alt="...">
+                  <div class="cap">
+                    <h3>[서울] 코지마</h3>
+                    <p>최상급 자연산 재료의 향연</p>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </a>
+                <a href="/html/food.html" class="food-item">
+                  <img src="/asset/image/main/food6.png" class="food-img" alt="...">
+                  <div class="cap">
+                    <h3>[제주] TERRENO</h3>
+                    <p>제주에서 느끼는 스페인의 맛</p>
+                    <div class="michelin-icons">
+                      <img src="/asset/image/main/Michelin.png" alt="" class="star-icon">
+                    </div>
+                  </div>
+                </a>
+                
+            </div>
+          </div>
+        </section>
+        <!-- food section end -->
+
+        <!-- tour section start -->
+        <section class="tour-section tour-section-pc">
+          <div class="tour-container section-container">
+            <h2 class="title tour-title">투어 패키지 Best5만 모아왔어요</h2>
+            <div class="tour-items">
+              <a href="/html/tour.html" class="tour-item">
+                <p class="tour-title">[제주] 제주생태관광 이용권</p>
+                <div class="item-hover item-hover-first">
+                  <div class="top-group">
+                    <h3>[제주] 제주생태관광 이용권</h3>
+                    <p>편백나무 숲에서 온전한 휴식</p>
+                  </div>
+                  <div class="bottom-group">
+                    <div class="tags">
+                      <div class="tag">#휴식</div>
+                      <div class="tag">#명상</div>
+                      <div class="tag">#숲</div>
+                    </div>
+                    <div class="price">30,000원</div>
+                  </div>
+                </div>
+              </a>
+              <div class="item-group item-group-first">
+                <a href="/html/tour.html" class="tour-item tour-item2">
+                  <p class="tour-title">[제주] 아르떼 뮤지엄 입장권</p>
+                  <div class="item-hover">
+                    <div class="top-group">
+                      <h3>[제주] 아르떼 뮤지엄 입장권</h3>
+                      <p>국내 첫 몰입형 미디어아트 상설 전시</p>
+                    </div>
+                    <div class="bottom-group">
+                      <div class="tags">
+                        <div class="tag">#아트</div>
+                        <div class="tag">#전시</div>
+                        <div class="tag">#체험</div>
+                      </div>
+                      <div class="price">10,000원</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/html/tour.html" class="tour-item tour-item3">
+                  <p class="tour-title">[부산] 요트투어</p>
+                  <div class="item-hover">
+                    <div class="top-group">
+                      <h3>[부산] 요트투어</h3>
+                      <p>바다 위에서의 력서리한 하루</p>
+                    </div>
+                    <div class="bottom-group">
+                      <div class="tags">
+                        <div class="tag">#레저</div>
+                        <div class="tag">#바다</div>
+                        <div class="tag">#체험</div>
+                      </div>
+                      <div class="price">99,900원</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item-group">
+                <a href="/html/tour.html" class="tour-item tour-item4">
+                  <p class="tour-title">[제주] 별이 빛나는 밤, 야간 오름 트래킹</p>
+                  <div class="item-hover">
+                    <div class="top-group">
+                      <h3>[제주] 별이 빝나는 밤, 야간 오름 트래킹</h3>
+                      <p>어둠 속에 감춰진 황홀한 제주의 밤</p>
+                    </div>
+                    <div class="bottom-group">
+                      <div class="tags">
+                        <div class="tag">#야간</div>
+                        <div class="tag">#트래킹</div>
+                        <div class="tag">#별</div>
+                      </div>
+                      <div class="price">35,000원</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/html/tour.html" class="tour-item tour-item5">
+                  <p class="tour-title">[서울] N 서울타워 전망대 이용권</p>
+                  <div class="item-hover">
+                    <div class="top-group">
+                      <h3>[서울] N 서울타워 전망대 이용권</h3>
+                      <p>서울의 풍경을 360도 파노라마 뷰로 한눈에</p>
+                    </div>
+                    <div class="bottom-group">
+                      <div class="tags">
+                        <div class="tag">#전망</div>
+                        <div class="tag">#야경</div>
+                        <div class="tag">#뷰</div>
+                      </div>
+                      <div class="price">14,400원</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- tour section mobile -->
+        <section class="tour-section tour-section-mobile">
+          <div class="tour-container section-container">
+              <h2 class="title sleep-title">투어 패키지 Best5만 모아왔어요</h2>
+              <div class="sleep-items">
+                <a href="/html/tour.html" class="sleep-item">
+                  <img src="/asset/image/main/4737_large_square_1535949304.jpg" class="tour-img" alt="...">
+                <div class="tour-cap">
+                  <div class="first-group">
+                    <h3>[제주] 제주생태관광 이용권</h3>
+                    <p>편백나무 숲에서 온전한 휴식</p>
+                  </div>
+                  <div class="second-group">
+                    <div class="tags">
+                      <div class="tag">#휴식</div>
+                      <div class="tag">#명상</div>
+                      <div class="tag">#숲</div>
+                    </div>
+                    <p>30,000원</p>
+                  </div>
+                </div>
+                </a>
+                <a href="/html/tour.html" class="sleep-item">
+                  <img src="/asset/image/main/4737_large_square_1535949304.jpg" class="tour-img" alt="...">
+                <div class="tour-cap">
+                  <div class="first-group">
+                    <h3>[제주] 아르떼 뮤지엄 입장권</h3>
+                    <p>국내 첫 몰입형 미디어아트 상설 전시</p>
+                  </div>
+                  <div class="second-group">
+                    <div class="tags">
+                      <div class="tag">#아트</div>
+                      <div class="tag">#전시</div>
+                      <div class="tag">#체험</div>
+                    </div>
+                    <p>10,000원</p>
+                  </div>
+                </div>
+                </a>
+                <a href="/html/tour.html" class="sleep-item">
+                  <img src="/asset/image/main/4737_large_square_1535949304.jpg" class="tour-img" alt="...">
+                <div class="tour-cap">
+                  <div class="first-group">
+                    <h3>[부산] 요트투어</h3>
+                    <p>바다 위에서의 력서리한 하루</p>
+                  </div>
+                  <div class="second-group">
+                    <div class="tags">
+                      <div class="tag">#레저</div>
+                      <div class="tag">#바다</div>
+                      <div class="tag">#체험</div>
+                    </div>
+                    <p>99,900원</p>
+                  </div>
+                </div>
+                </a>
+                <a href="/html/tour.html" class="sleep-item">
+                  <img src="/asset/image/main/4737_large_square_1535949304.jpg" class="tour-img" alt="...">
+                <div class="tour-cap">
+                  <div class="first-group">
+                    <h3>[제주] 별이 빝나는 밤, 야간 오름 트래킹</h3>
+                    <p>어둠 속에 감춰진 황홀한 제주의 밤</p>
+                  </div>
+                  <div class="second-group">
+                    <div class="tags">
+                      <div class="tag">#야간</div>
+                      <div class="tag">#트래킹</div>
+                      <div class="tag">#별</div>
+                    </div>
+                    <p>35,000원</p>
+                  </div>
+                </div>
+                </a>
+                <a href="/html/tour.html" class="sleep-item">
+                  <img src="/asset/image/main/4737_large_square_1535949304.jpg" class="tour-img" alt="...">
+                <div class="tour-cap">
+                  <div class="first-group">
+                    <h3>[서울] N 서울타워 전망대 이용권</h3>
+                    <p>서울의 풍경을 360도 파노라마 뷰로 한눈에</p>
+                  </div>
+                  <div class="second-group">
+                    <div class="tags">
+                      <div class="tag">#전망</div>
+                      <div class="tag">#야경</div>
+                      <div class="tag">#뷰</div>
+                    </div>
+                    <p>14,400원</p>
+                  </div>
+                </div>
+                </a>
+
+            </div>
+          </div>
+        </section>
+        <!-- tour section end -->
+
+        <!-- flight section start -->
+        <section class="flight-section flight-section-pc">
+          <div class="flight-container section-container">
+            <h2 class="title region-title">이번 겨울, 티웨이와 함께 제주에서❄️</h2>
+            <div class="flight-items card-wrapper">
+                <a href="/html/air.html" class="flight-item">
+                  <img src="/asset/image/air/banner1.png" class="flight-img"  alt="...">
+                </a>
+                <a href="/html/air.html" class="flight-item">
+                  <img src="/asset/image/air/banner2.png" class="flight-img"  alt="...">
+                </a>
+                <a href="/html/air.html" class="flight-item">
+                  <img src="/asset/image/air/banner3.png" class="flight-img"  alt="...">
+                </a>
+                <a href="/html/air.html" class="flight-item">
+                  <img src="/asset/image/main/event1.jpeg" class="flight-img"  alt="...">
+                </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- flight section mobile -->
+        <section class="flight-section flight-section-mobile">
+          <div class="flight-container section-container">
+            <h2 class="title region-title">이번 겨울, 제주 항공편 프로모션❄️</h2>
+            <div class="flight-items">
+                <a href="#" class="flight-item">
+                  <img src="/asset/image/air/banner1.png" class="flight-img"  alt="...">
+                </a>
+                <a href="#" class="flight-item">
+                  <img src="/asset/image/air/banner2.png" class="flight-img"  alt="...">
+                </a>
+                <a href="#" class="flight-item">
+                  <img src="/asset/image/air/banner3.png" class="flight-img"  alt="...">
+                </a>
+                <a href="#" class="flight-item">
+                  <img src="/asset/image/main/event1.jpeg" class="flight-img"  alt="...">
+                </a>
+            </div>
+          </div>
+        </section> 
+        <!-- flight section end -->
+
+      </div>
+      <!-- main end -->
+    </main>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <!-- 핫 딜 디데이 계산기 -->
+    <script>
+      $(document).ready(function () {
+    // 목표 날짜 설정 (2024년 1월 24일)
+    var targetDate = new Date("2024-01-24T00:00:00");
+
+    // 타이머 업데이트 함수
+    function updateTimer() {
+        var currentDate = new Date();
+        var timeDifference = targetDate - currentDate;
+
+        // 남은 날짜, 시간, 분, 초 계산
+        var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // 결과를 화면에 출력
+        var dDayText = days.toString().padStart(2, '0') + "일 " +
+                       hours.toString().padStart(2, '0') + "시간 " +
+                       minutes.toString().padStart(2, '0') + "분 " +
+                       seconds.toString().padStart(2, '0') + "초 남았습니다.";
+                       
+        $(".dDay").html(dDayText);
+    }
+
+    // 초기 업데이트 호출
+    updateTimer();
+
+    // 1초마다 업데이트
+    setInterval(updateTimer, 1000);
+}); 
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // header와 footer를 불러 오는 스트립트
+      $(function () {
+        $("#header").load("/html/header.html");
+        $("#footer").load("/html/footer.html");
+      });
+    </script>
+  </body>
+</html>
